@@ -1,0 +1,105 @@
+// Datos ficticios para la demo y para el PDF de ejemplo.
+// Los DNI son números de prueba (00000000T), no corresponden a nadie.
+
+export const SECCIONES = [
+  { id: 1, nombre: 'Manada Alba de Seonee', adultos: false },
+  { id: 2, nombre: 'Tropa Amazonas', adultos: false },
+  { id: 3, nombre: 'Esculta Mabuloa', adultos: false },
+  { id: 4, nombre: 'Scouters', adultos: true },
+  { id: 5, nombre: 'Comité', adultos: true },
+];
+
+export const EJEMPLO = {
+  seccion_id: 1,
+  educando: {
+    nombre: 'Lucía',
+    apellidos: 'Martínez Sánchez',
+    documento: '',
+    fecha_nacimiento: '2017-05-12',
+    direccion: 'C/ Ejemplo, 12',
+    poblacion: 'El Algar',
+    provincia: 'Murcia',
+    codigo_postal: '30366',
+    telefono_fijo: '',
+    movil: '',
+    email: '',
+  },
+  tutores: [
+    {
+      documento: '00000000T', nombre: 'Carmen', apellidos: 'Sánchez Ruiz', profesion: 'Enfermera',
+      telefono_fijo: '', movil: '600 000 001', email: 'carmen@ejemplo.com',
+      whatsapp_autoriza: true, whatsapp_telefono: '600 000 001',
+    },
+    {
+      documento: '00000001R', nombre: 'Javier', apellidos: 'Martínez López', profesion: 'Electricista',
+      telefono_fijo: '', movil: '600 000 002', email: 'javier@ejemplo.com',
+      whatsapp_autoriza: false, whatsapp_telefono: '',
+    },
+  ],
+  ficha: {
+    seguro: 'Seguridad Social (SMS)',
+    numero_seguro: 'MU 0000 0000 00',
+    enuresis: false,
+    sonambulismo: false,
+    enfermedad_cronica: false,
+    enfermedad_cronica_cual: '',
+    tratamiento_medico: false,
+    tratamiento_medico_cual: '',
+    dieta_especial: false,
+    dieta_especial_cual: '',
+    alergia_medicamentos: true,
+    alergia_medicamentos_cual: 'Amoxicilina',
+    otras_alergias: 'Polen de olivo (rinitis leve en primavera)',
+    necesidades_educativas: '',
+  },
+  autorizaciones: {
+    acepta_participacion: true,
+    vuelve_solo: false,
+    autoriza_medicacion: true,
+    imagen_canales_internos: true,
+    imagen_redes_y_medios: false,
+    imagen_mensajeria: true,
+    acepta_info_rgpd: true,
+    consiente_datos_salud: true,
+  },
+  firma: { nombre: 'Carmen Sánchez Ruiz', documento: '00000000T', lugar: 'El Algar' },
+};
+
+export const EJEMPLO_ADULTO = {
+  seccion_id: 4,
+  educando: {
+    nombre: 'Marta',
+    apellidos: 'Ruiz Gómez',
+    documento: '00000002W',
+    fecha_nacimiento: '1998-04-20',
+    direccion: 'C/ Luna, 3',
+    poblacion: 'El Algar',
+    provincia: 'Murcia',
+    codigo_postal: '30366',
+    telefono_fijo: '',
+    movil: '600 000 003',
+    email: 'marta@ejemplo.com',
+  },
+  contacto: { nombre: 'Luis Ruiz Gómez', telefono1: '600 000 004', telefono2: '' },
+  ficha: {
+    alergia_medicamentos: false,
+    otras_alergias_tiene: true,
+    otras_alergias: 'Ácaros del polvo',
+    enfermedad_cronica: false,
+    anticonceptivo: null,
+    embarazo: null,
+    dieta_especial: true,
+    dieta_especial_cual: 'Vegetariana',
+    fumador: false,
+    alcohol: false,
+    gafas_lentillas: true,
+  },
+  autorizaciones: {
+    imagen_canales_internos: true,
+    imagen_redes_y_medios: true,
+    imagen_mensajeria: true,
+    acepta_info_rgpd: true,
+    consiente_datos_salud: true,
+  },
+  firma: { nombre: 'Marta Ruiz Gómez', documento: '00000002W', lugar: 'El Algar' },
+};

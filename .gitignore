@@ -1,0 +1,7 @@
+node_modules/
+dist/
+ejemplos/
+supabase/.temp/
+supabase/.branches/
+.env
+.DS_Store
